@@ -7,7 +7,7 @@
 <link href="../fonts.css" rel="stylesheet" type="text/css" media="all" />
 <style>
 table {
-  font-family: arial, sans-serif;
+  font-family: 微軟正黑體, sans-serif;
   border-collapse: collapse;
   width: 100%;
   color: #000000;

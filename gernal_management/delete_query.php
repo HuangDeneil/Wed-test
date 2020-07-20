@@ -12,7 +12,7 @@
 
 <style>
 table {
-  font-family: arial, sans-serif;
+  font-family: 微軟正黑體, sans-serif;
   border-collapse: collapse;
   width: 100%;
   color: #000000;
