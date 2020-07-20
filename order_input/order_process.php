@@ -81,10 +81,10 @@ tr:nth-child(even) {
 <div id="wrapper" class="container">
   <form name="table_value" method="POST" action="query.php">
   <p><span class="error">* require value</span><p>
+  
   <h2 style="font-family:微軟正黑體;text-transform:initial;font-size:200%">基礎資訊</h2>
   <svg height="7" width="1200"><line x1="0" y1="0" x2="1300" y2="0" style="stroke:rgb(0,150,255);stroke-width:2" /></svg>
-
-  <table>
+ <table>
     <tr>
       <td>&ensp;物種編號 : </br><p>&ensp;id</p></td>
       <td><input type="text" name="id" rows="2" cols="50">(本欄未填寫則自動生成) </td>
@@ -160,23 +160,23 @@ tr:nth-child(even) {
       </tr>
     </table>
     </br>
-    
+
 <script>
-    var order_form = document.getElementById("name").value;
+    var order_form = $("#name").value;
     var source_name = document.getElementById("genus").value;
     var source_phone = document.getElementById("type").value;
     var arrive_name = document.getElementById("key_word").value;
     var arrive_phone = document.getElementById("Description").value;
     var arrive_address = document.getElementById("reference1").value;
 
-    if( order_form === "" ){ }
+    if( document.getElementById("name").value === "" ){ document.write("test") }
     else if( source_name === "" ){ }
     else if( source_phone === "" ){ }
     else if( arrive_name === "" ){ }
     else if( arrive_phone === "" ){ }
     else if( arrive_address === "" ){  }
     else{
-      document.write("test");
+      document.write("test");alert("test");
       }
     
 </script>
