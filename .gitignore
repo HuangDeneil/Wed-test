@@ -6,4 +6,5 @@ main_script20191028/
 test
 history/
 order_list/*.csv
-
+*.json
+*.md

@@ -2,7 +2,7 @@
 
 <html>
 <head>
-<title>訂單確認</title>
+<title>資料確認</title>
 <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800|Open+Sans+Condensed:300,700" rel="stylesheet" />
 <link href="../default.css" rel="stylesheet" type="text/css" media="all" />
 <link href="../fonts.css" rel="stylesheet" type="text/css" media="all" />
@@ -40,7 +40,7 @@ tr:nth-child(even) {
 
 <div id="logo" class="container">
   <a href="order_process.php" class="button" style="font-family:微軟正黑體;text-transform:initial;font-size:120%">Cancel & Back</a>
-  <h1 style="font-family:微軟正黑體;text-transform:initial;font-size:300%"><span>訂單確認</span></h1>
+  <h1 style="font-family:微軟正黑體;text-transform:initial;font-size:300%"><span>新增資料確認</span></h1>
 </div>
 
 <?php
@@ -54,12 +54,12 @@ id  name    genus   type    key_word
 source  Halos_id    Description
 reference1  reference2  reference3  reference4  reference5
 */
-    $id=$name=$genus=$type=$key_word="";
+    $id=$organism_name=$genus=$type=$key_word="";
     $source=$Halos_id=$Description="";
     $reference1=$reference2=$reference3=$reference4=$reference5=0;
     
     $id=_get("id");
-    $name=_get("name");
+    $organism_name=_get("organism_name");
     $genus=_get("genus");
     $type=_get("type");
     $key_word=_get("key_word");
@@ -79,20 +79,10 @@ reference1  reference2  reference3  reference4  reference5
     {
         $id="S".date("Ymdhis");
     }
-  
 ?>
-
-
 
 <div id="wrapper" class="container">
 <form name="table_value" method="POST" action="upload.php">
-<?php
-/*
-###################################################
-#################### 訂單呈現 ######################
-###################################################
-*/
-?>
 
 <h2 style="font-family:微軟正黑體;text-transform:initial;font-size:200%">基礎資訊</h2>
 <svg height="7" width="1200"><line x1="0" y1="0" x2="1300" y2="0" style="stroke:rgb(0,150,255);stroke-width:2" /></svg>
@@ -104,7 +94,7 @@ reference1  reference2  reference3  reference4  reference5
     <tr> 
     </tr>
         <td>物種名: </td>
-        <td><?php echo "$name"; ?> <input type="hidden" name="name" value ="<?php echo $name; ?>" ></td> 
+        <td><?php echo "$organism_name"; ?> <input type="hidden" name="organism_name" value ="<?php echo $organism_name; ?>" ></td> 
     <tr>
 </table>
     <h2 style="font-family:微軟正黑體;text-transform:initial;font-size:200%">分類資訊</h2>
@@ -113,19 +103,19 @@ reference1  reference2  reference3  reference4  reference5
   <table>
     <tr>
         <td>&ensp;屬名:</br>&ensp;genus</td>
-        <td><?php echo "$genus"; ?><input type="hidden" name="genus" id="genus"></td>
+        <td><?php echo "$genus"; ?><input type="hidden" name="genus" id="genus" value ="<?php echo $genus; ?>"></td>
         <td>&ensp;大分類:</br>&ensp;type:</td>
-        <td><?php echo "$type"; ?><input type="hidden" name="type" id="type" ></td>
+        <td><?php echo "$type"; ?><input type="hidden" name="type" id="type" value ="<?php echo $type; ?>"></td>
     </tr>
     <tr>
         <td>&ensp;Halos_id:</td>
-        <td><?php echo "$Halos_id"; ?><input type="hidden" name="Halos_id" ><p></p></td>
+        <td><?php echo "$Halos_id"; ?><input type="hidden" name="Halos_id" value ="<?php echo $Halos_id; ?>"><p></p></td>
         <td>&ensp;關鍵字:</br>&ensp;key_word</td>
-        <td><?php echo "$key_word"; ?><input type="hidden" name="key_word" id="key_word" ></td>
+        <td><?php echo "$key_word"; ?><input type="hidden" name="key_word" id="key_word" value ="<?php echo $key_word; ?>"></td>
     </tr>
     <tr>
         <td>&ensp;資訊來源:</br>&ensp;source</td>
-        <td><?php echo "$source"; ?><input type="hidden" name="source"></td>
+        <td><?php echo "$source"; ?><input type="hidden" name="source" value ="<?php echo $source; ?>"></td>
     </tr>
   </table>
 
@@ -133,7 +123,7 @@ reference1  reference2  reference3  reference4  reference5
     <table>
       <tr>
         <td>&ensp;物種描述:</br>&ensp;Description</td>
-        <td><?php echo "$Description"; ?><input type="hidden" name="Description" id="Description"></td>
+        <td><?php echo "$Description"; ?><input type="hidden" name="Description" id="Description" value ="<?php echo $Description; ?>"></td>
       </tr>
     </table>
     </br>
@@ -143,23 +133,23 @@ reference1  reference2  reference3  reference4  reference5
     <table>
       <tr>
         <td>文獻1</br>reference1:</td>
-        <td><?php echo "$reference1"; ?><input type="hidden" name="reference1" id="reference1" id="order_form"></td>
+        <td><?php echo "$reference1"; ?><input type="hidden" name="reference1" value ="<?php echo $reference1; ?>"></td>
       </tr>
       <tr>
         <td>文獻2</br>reference2:</td>
-        <td><?php echo "$reference2"; ?><input type="hidden" name="reference2" rows="2" cols="130"></td>
+        <td><?php echo "$reference2"; ?><input type="hidden" name="reference2" value ="<?php echo $reference2; ?>"></td>
       </tr>
       <tr>
         <td>文獻3</br>reference3:</td>
-        <td><?php echo "$reference3"; ?><input type="hidden" name="reference3" rows="2" cols="130"></td>
+        <td><?php echo "$reference3"; ?><input type="hidden" name="reference3" value ="<?php echo $reference3; ?>"></td>
       </tr>
       <tr>
         <td>文獻4</br>reference4:</td>
-        <td><?php echo "$reference4"; ?><input type="hidden" name="reference4" rows="2" cols="130"></td>
+        <td><?php echo "$reference4"; ?><input type="hidden" name="reference4" value ="<?php echo $reference4; ?>"></td>
       </tr>
       <tr>
         <td>文獻5</br>reference5:</td>
-        <td><?php echo "$reference5"; ?><input type="hidden" name="reference5" rows="2" cols="130"></td>
+        <td><?php echo "$reference5"; ?><input type="hidden" name="reference5" value ="<?php echo $reference5; ?>"></td>
       </tr>
     </table>
     </br>

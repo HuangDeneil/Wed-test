@@ -72,7 +72,7 @@ tr:nth-child(even) {
             echo "<table id=\"mt\" style=\"width:100%\" border=\"1\" cellpadding=\"5\">";
             echo "<thead>";
             echo "<td style=\"font-family:微軟正黑體;text-transform:initial;font-size:150%\">ID</td>";
-            echo "<td style=\"font-family:微軟正黑體;text-transform:initial;font-size:150%\">Name</td>";
+            echo "<td style=\"font-family:微軟正黑體;text-transform:initial;font-size:150%\">Organism Name</td>";
             echo "<td style=\"font-family:微軟正黑體;text-transform:initial;font-size:150%\">Genus</td>";
             echo "<td style=\"font-family:微軟正黑體;text-transform:initial;font-size:150%\">Type</td>";
             echo "<td style=\"font-family:微軟正黑體;text-transform:initial;font-size:150%\">Source</td>";
@@ -82,7 +82,7 @@ tr:nth-child(even) {
             while($row = $result->fetch_assoc()) {
                 echo "<tr>";
                 echo "<td style=\"font-family:微軟正黑體;text-transform:initial;font-size:100%\">" . $row["ID"]. "</td>";
-                echo "<td style=\"font-family:微軟正黑體;text-transform:initial;font-size:100%\">" . $row["name"]. "</td>";
+                echo "<td style=\"font-family:微軟正黑體;text-transform:initial;font-size:100%\">" . $row["organism_name"]. "</td>";
                 echo "<td style=\"font-family:微軟正黑體;text-transform:initial;font-size:100%\">" . $row["genus"]. "</td>";
                 echo "<td style=\"font-family:微軟正黑體;text-transform:initial;font-size:100%\"> " . $row["type"]. "</td>";
                 echo "<td style=\"font-family:微軟正黑體;text-transform:initial;font-size:100%\"> " . $row["source"]. "</td>";

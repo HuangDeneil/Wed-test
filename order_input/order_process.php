@@ -169,7 +169,7 @@ tr:nth-child(even) {
     var arrive_phone = document.getElementById("Description").value;
     var arrive_address = document.getElementById("reference1").value;
 
-    if( document.getElementById("name").value === "" ){ document.write("test") }
+    if( document.getElementById("name").value === "" ){ document.write("") }
     else if( source_name === "" ){ }
     else if( source_phone === "" ){ }
     else if( arrive_name === "" ){ }
