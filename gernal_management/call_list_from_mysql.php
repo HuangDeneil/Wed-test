@@ -82,8 +82,8 @@ tr:nth-child(even) {
             while($row = $result->fetch_assoc()) {
                 echo "<tr>";
                 echo "<td style=\"font-family:微軟正黑體;text-transform:initial;font-size:100%\">" . $row["ID"]. "</td>";
-                echo "<td style=\"font-family:微軟正黑體;text-transform:initial;font-size:100%\">" . $row["organism_name"]. "</td>";
-                echo "<td style=\"font-family:微軟正黑體;text-transform:initial;font-size:100%\">" . $row["genus"]. "</td>";
+                echo "<td style=\"font-family:微軟正黑體;text-transform:initial;font-size:100%\"><I>" . $row["organism_name"]. "</I></td>";
+                echo "<td style=\"font-family:微軟正黑體;text-transform:initial;font-size:100%\"><I>" . $row["genus"]. "</I></td>";
                 echo "<td style=\"font-family:微軟正黑體;text-transform:initial;font-size:100%\"> " . $row["type"]. "</td>";
                 echo "<td style=\"font-family:微軟正黑體;text-transform:initial;font-size:100%\"> " . $row["source"]. "</td>";
                 echo "<td style=\"font-family:微軟正黑體;text-transform:initial;font-size:100%\"> " . $row["key_word"]. "</td>";

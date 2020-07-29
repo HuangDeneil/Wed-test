@@ -56,29 +56,37 @@ reference1  reference2  reference3  reference4  reference5
 */
     $id=$organism_name=$genus=$type=$key_word="";
     $source=$Halos_id=$Description="";
-    $reference1=$reference2=$reference3=$reference4=$reference5=0;
+    $reference1=$reference2=$reference3=$reference4=$reference5="";
     
     $id=_get("id");
     $organism_name=_get("organism_name");
+    $chinese_name=_get("chinese_name");
     $genus=_get("genus");
+    $gram_stain=_get("gram_stain");
     $type=_get("type");
     $key_word=_get("key_word");
 
     $source=_get("source");
     $Halos_id=_get("Halos_id");
+    $taxid=_get("taxid");
     $Description=_get("Description");
     
     $reference1=_get("reference1");
-    $reference2=_get("reference2");   
-    $reference3=_get("reference3");     
-    $reference4=_get("reference4"); 
-    $reference5=_get("reference5"); 
+    $reference2=_get("reference2");
+    $reference3=_get("reference3");
+    $reference4=_get("reference4");
+    $reference5=_get("reference5");
     
+    $date=date("Ymdhis");
+    $data_source=_get("data_source");
+    $data_status=_get("data_status");
+
     if ( !empty($id) ){}
     else
     {
         $id="S".date("Ymdhis");
     }
+
 ?>
 
 <div id="wrapper" class="container">
@@ -95,8 +103,11 @@ reference1  reference2  reference3  reference4  reference5
     </tr>
         <td>物種名: </td>
         <td><?php echo "$organism_name"; ?> <input type="hidden" name="organism_name" value ="<?php echo $organism_name; ?>" ></td> 
+        <td>物種中文名: </td>
+        <td><?php echo "$chinese_name"; ?> <input type="hidden" name="chinese_name" value ="<?php echo $chinese_name; ?>" ></td> 
     <tr>
 </table>
+</br>
     <h2 style="font-family:微軟正黑體;text-transform:initial;font-size:200%">分類資訊</h2>
   <svg height="7" width="1200"><line x1="0" y1="0" x2="1300" y2="0" style="stroke:rgb(0,150,255);stroke-width:2" /></svg>
 
@@ -108,12 +119,14 @@ reference1  reference2  reference3  reference4  reference5
         <td><?php echo "$type"; ?><input type="hidden" name="type" id="type" value ="<?php echo $type; ?>"></td>
     </tr>
     <tr>
-        <td>&ensp;Halos_id:</td>
-        <td><?php echo "$Halos_id"; ?><input type="hidden" name="Halos_id" value ="<?php echo $Halos_id; ?>"><p></p></td>
+        <td>&ensp;Gram stain:</td>
+        <td><?php echo "$gram_stain"; ?><input type="hidden" name="gram_stain" value ="<?php echo $gram_stain; ?>"><p></p></td>
         <td>&ensp;關鍵字:</br>&ensp;key_word</td>
         <td><?php echo "$key_word"; ?><input type="hidden" name="key_word" id="key_word" value ="<?php echo $key_word; ?>"></td>
     </tr>
     <tr>
+        <td>&ensp;Halos_id:</td>
+        <td><?php echo "$Halos_id"; ?><input type="hidden" name="Halos_id" value ="<?php echo $Halos_id; ?>"><p></p></td>
         <td>&ensp;資訊來源:</br>&ensp;source</td>
         <td><?php echo "$source"; ?><input type="hidden" name="source" value ="<?php echo $source; ?>"></td>
     </tr>
