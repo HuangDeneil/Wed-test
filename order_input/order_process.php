@@ -115,7 +115,7 @@ tr:nth-child(even) {
     <tr>
         <td>&ensp;屬名:</br>&ensp;genus</td>
         <td><input class=input_type1 type="text" name="genus" id="genus" ><span class="error">* </span>
-          <p>ex: Clostridium, Acinetobacter</p>
+          <p>ex: Klebsiella, Acinetobacter</p>
         </td>
         <td>&ensp;大分類:</br>&ensp;type:</td>
         <td>
@@ -132,6 +132,60 @@ tr:nth-child(even) {
         </td>
     </tr>
     <tr>
+        <td>&ensp;物種名:</br>&ensp;species name</td>
+        <td><input class=input_type1 type="text" name="species_name" id="species_name" ><span class="error">* </span>
+          <p>ex: Klebsiella pneumoniae, </br>Acinetobacter baumannii</p>
+        </td>
+        <td>&ensp;關鍵字:</br>&ensp;key word</td>
+        <td>
+          </br>
+          <input type="checkbox" id="anaerobic" name="anaerobic" value="anaerobic">
+          <label for="anaerobic">anaerobic</label>&ensp;&ensp;
+          <input type="checkbox" id="facultative anaerobe" name="facultative anaerobe" value="facultative anaerobe">
+          <label for="facultative anaerobe">facultative anaerobe</label>&ensp;&ensp;&ensp;&ensp;
+          <input type="checkbox" id="aerobic" name="aerobic" value="aerobic">
+          <label for="aerobic">aerobic</label>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+          <input type="checkbox" id="strictly aerobic" name="strictly aerobic" value="strictly aerobic">
+          <label for="strictly aerobic">strictly aerobic</label></br>
+
+          <input type="checkbox" id="pathogen" name="pathogen" value="pathogen">
+          <label for="pathogen">pathogen</label>&ensp;&ensp;
+          <input type="checkbox" id="opportunistic pathogen" name="opportunistic pathogen" value="opportunistic pathogen">
+          <label for="opportunistic pathogen">opportunistic pathogen</label>&ensp;
+          <input type="checkbox" id="plant pathogen" name="plant pathogen" value="plant pathogen">
+          <label for="plant pathogen">plant pathogen</label>&ensp;
+          <input type="checkbox" id="unkown pathogenic" name="unkown pathogenic" value="unkown pathogenic">
+          <label for="unkown pathogenic">unkown pathogenic</label>&ensp;<br><br>
+
+          <input type="checkbox" id="normal flora" name="normal flora" value="normal flora">
+          <label for="normal flora">normal flora</label>
+          <input type="checkbox" id="environmental" name="environmental" value="environmental">
+          <label for="environmental">environmental</label><br>
+          
+          <input type="checkbox" id="oral" name="oral" value="oral">
+          <label for="oral">oral</label>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+          <input type="checkbox" id="gut" name="gut" value="gut">
+          <label for="gut">gut</label>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+          <input type="checkbox" id="skin" name="skin" value="skin">
+          <label for="skin">skin</label>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+          <input type="checkbox" id="vaginal" name="vaginal" value="vaginal">
+          <label for="vaginal">vaginal</label>&ensp;<br><br>
+
+          <input type="checkbox" id="extrime" name="extrime" value="extrime">
+          <label for="extrime">extrime</label>&ensp;&ensp;&ensp;&ensp;&ensp;
+          <input type="checkbox" id="acidophilic" name="acidophilic" value="acidophilic">
+          <label for="acidophilic">acidophilic</label>&ensp;&ensp;&ensp;&ensp;
+          <input type="checkbox" id="thermophilic" name="thermophilic" value="thermophilic">
+          <label for="thermophilic">thermophilic</label>&ensp;&ensp;&ensp;<br>
+          
+          <input type="checkbox" id="unkown" name="unkown" value="unkown">
+          <label for="unkown">unkown</label><br>
+          </br><p>others:
+          <textarea class=textarea_typ1 type="text" name="key_word" id="key_word" rows="3" cols="80"></textarea><span class="error">* </span>
+          </p>
+        </td>
+    </tr>
+    <tr>
     <td>&ensp;格蘭氏染色:</br>&ensp;Gram stain:</td>
         <td>
           <select class=select_type1 name="gram_stain">
@@ -140,13 +194,17 @@ tr:nth-child(even) {
             <option style="font-family:微軟正黑體;text-transform:initial;font-size:120%" value="negative">negative</option>
           </select>  <span class="error">* </span>
         </td>
-        <td>&ensp;關鍵字:</br>&ensp;key_word</td>
-        <td><textarea class=textarea_typ1 type="text" name="key_word" id="key_word" rows="3" cols="80"></textarea><span class="error">* </span>
-          <p>ex: "anaerobic/aerobic/strictly aerobic","opportunistic pathogen/pathogen/plant pathogen", </br>"normal flora/environmental", "oral,gut,skin,vaginal","acidophilic, thermophilic","unkown"</p>
+    <td>&ensp;樣品來源</br>&ensp;Sample type:</td>
+        <td>
+          <select class=select_type1 name="sample_type">
+            <option style="font-family:微軟正黑體;text-transform:initial;font-size:120%" value=""></option>
+            <option style="font-family:微軟正黑體;text-transform:initial;font-size:120%" value="positive">positive</option>
+            <option style="font-family:微軟正黑體;text-transform:initial;font-size:120%" value="negative">negative</option>
+          </select>  <span class="error">* </span>
         </td>
     </tr>
     <tr>
-        <td>&ensp;Halos_id:</td>
+        <td>&ensp;Halos id:</td>
         <td><input class=input_type1 type="text" name="Halos_id" ><p></p></td>
         <td>&ensp;taxid:</td>
         <td><input class=input_type1 type="text" name="taxid"></td>
@@ -196,13 +254,13 @@ tr:nth-child(even) {
   <table>
     <tr>
       <td>資料來源</br>data source</td>
-      <td><input class=input_type1 type="text" name="data_source" id="data_source" rows="2" cols="130" id="order_form"></textarea>
+      <td><input class=input_type1 type="text" name="data_source" id="data_source" rows="2" cols="130" ></textarea>
         <p>ex: NCBI、PATRIC、EupathDB、FDA-ARGOS</p>
       </td>
     </tr>
     <tr>
-      <td>資料來源</br>data source</td>
-      <td><input class=input_type1 type="text" name="data_source" id="data_source" rows="2" cols="130" id="order_form"></textarea>
+      <td>資料基因狀況</br>data status</td>
+      <td><input class=input_type1 type="text" name="data_status" id="data_status" rows="2" cols="130" ></textarea>
         <p>ex: complete genome, chromosome, scaffold, contig</p>
       </td>
     </tr>
