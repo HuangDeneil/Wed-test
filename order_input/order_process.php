@@ -113,11 +113,11 @@ tr:nth-child(even) {
 
   <table>
     <tr>
-        <td>&ensp;屬名:</br>&ensp;genus</td>
+        <td>&ensp;屬名:</br>&ensp;Genus</td>
         <td><input class=input_type1 type="text" name="genus" id="genus" ><span class="error">* </span>
-          <p>ex: Klebsiella, Acinetobacter</p>
+          <p>ex: <i>Klebsiella, Acinetobacter</i></p>
         </td>
-        <td>&ensp;大分類:</br>&ensp;type:</td>
+        <td>&ensp;大分類:</br>&ensp;Top type:</td>
         <td>
           <select class=select_type1 name="type">
             <option style="font-family:微軟正黑體;text-transform:initial;font-size:120%" value=""></option>
@@ -132,22 +132,30 @@ tr:nth-child(even) {
         </td>
     </tr>
     <tr>
-        <td>&ensp;物種名:</br>&ensp;species name</td>
+        <td>&ensp;種名:</br>&ensp;Species</td>
         <td><input class=input_type1 type="text" name="species_name" id="species_name" ><span class="error">* </span>
-          <p>ex: Klebsiella pneumoniae, </br>Acinetobacter baumannii</p>
+          <p>ex: <i>Klebsiella pneumoniae, </br>Acinetobacter baumannii</i></p>
         </td>
         <td>&ensp;關鍵字:</br>&ensp;key word</td>
         <td>
           </br>
-          <input type="checkbox" id="anaerobic" name="anaerobic" value="anaerobic">
-          <label for="anaerobic">anaerobic</label>&ensp;&ensp;
-          <input type="checkbox" id="facultative anaerobe" name="facultative anaerobe" value="facultative anaerobe">
-          <label for="facultative anaerobe">facultative anaerobe</label>&ensp;&ensp;&ensp;&ensp;
-          <input type="checkbox" id="aerobic" name="aerobic" value="aerobic">
-          <label for="aerobic">aerobic</label>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
-          <input type="checkbox" id="strictly aerobic" name="strictly aerobic" value="strictly aerobic">
-          <label for="strictly aerobic">strictly aerobic</label></br>
-
+          <h3>Aerobic/anaerobic:</h3>
+          <input type="checkbox" id="Strictly aerobic" name="Strictly aerobic" value="Strictly aerobic">
+          <label for="Strictly aerobic">Strictly aerobic</label>
+          <input type="checkbox" id="Aerobic" name="Aerobic" value="Aerobic">
+          <label for="Aerobic">Aerobic</label>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;</br>
+          <input type="checkbox" id="Facultative anaerobic" name="Facultative anaerobic" value="Facultative anaerobic">
+          <label for="Facultative anaerobic">Facultative anaerobic</label>&ensp;&ensp;&ensp;&ensp;
+          <input type="checkbox" id="Microaerophiles" name="Microaerophiles" value="Microaerophiles">
+          <label for="Microaerophiles">Microaerophiles</label>&ensp;&ensp;&ensp;&ensp;
+          <input type="checkbox" id="Aerotolerant" name="Aerotolerant" value="Aerotolerant">
+          <label for="Aerotolerant">Aerotolerant</label>&ensp;&ensp;&ensp;&ensp;
+          <input type="checkbox" id="Anaerobic" name="Anaerobic" value="Anaerobic">
+          <label for="Anaerobic">Anaerobic</label>&ensp;&ensp;
+          </br></br>
+           
+          
+          <h3>Pathogenic:</h3>
           <input type="checkbox" id="pathogen" name="pathogen" value="pathogen">
           <label for="pathogen">pathogen</label>&ensp;&ensp;
           <input type="checkbox" id="opportunistic pathogen" name="opportunistic pathogen" value="opportunistic pathogen">
@@ -157,11 +165,13 @@ tr:nth-child(even) {
           <input type="checkbox" id="unkown pathogenic" name="unkown pathogenic" value="unkown pathogenic">
           <label for="unkown pathogenic">unkown pathogenic</label>&ensp;<br><br>
 
+          <h3>Flora/environmental:</h3>
           <input type="checkbox" id="normal flora" name="normal flora" value="normal flora">
           <label for="normal flora">normal flora</label>
           <input type="checkbox" id="environmental" name="environmental" value="environmental">
-          <label for="environmental">environmental</label><br>
+          <label for="environmental">environmental</label><br><br>
           
+          <h3>Position:</h3>
           <input type="checkbox" id="oral" name="oral" value="oral">
           <label for="oral">oral</label>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
           <input type="checkbox" id="gut" name="gut" value="gut">
@@ -171,12 +181,13 @@ tr:nth-child(even) {
           <input type="checkbox" id="vaginal" name="vaginal" value="vaginal">
           <label for="vaginal">vaginal</label>&ensp;<br><br>
 
+          <h3>Extrime type:</h3>
           <input type="checkbox" id="extrime" name="extrime" value="extrime">
           <label for="extrime">extrime</label>&ensp;&ensp;&ensp;&ensp;&ensp;
           <input type="checkbox" id="acidophilic" name="acidophilic" value="acidophilic">
           <label for="acidophilic">acidophilic</label>&ensp;&ensp;&ensp;&ensp;
           <input type="checkbox" id="thermophilic" name="thermophilic" value="thermophilic">
-          <label for="thermophilic">thermophilic</label>&ensp;&ensp;&ensp;<br>
+          <label for="thermophilic">thermophilic</label>&ensp;&ensp;&ensp;</br></br>
           
           <input type="checkbox" id="unkown" name="unkown" value="unkown">
           <label for="unkown">unkown</label><br>
@@ -212,6 +223,8 @@ tr:nth-child(even) {
     <tr>
       <td>&ensp;資訊來源:</br>&ensp;source</td>
       <td><input class=input_type1 type="text" name="source"><p>ex: Halos, from someone</p></td>
+      <td>&ensp;species_taxid:</td>
+      <td><input class=input_type1 type="text" name="species_taxid"></td>
     <tr>
   </table>
   <table>
