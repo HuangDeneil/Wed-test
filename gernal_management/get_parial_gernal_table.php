@@ -37,8 +37,8 @@ tr:nth-child(even) {
 --->
 <body>
 <div id="logo" class="container">
-<a href="../index.html" class="button" style="font-family:微軟正黑體;text-transform:initial;font-size:150%">Home</a>
-  <h1 style="font-family:微軟正黑體;text-transform:initial;font-size:300%">訂單整理系統<span>Loacl web system</span><h1>Parial Gernal Table</h1></br></h1>
+<a href="../index.html" class="button">Home</a>
+  <h1>訂單整理系統<span>Loacl web system</span><h1>Parial Gernal Table</h1></br></h1>
 </div>
 
 
@@ -117,18 +117,18 @@ tr:nth-child(even) {
 
       echo "<table id=\"mt\" style=\"width:100%\" border=\"1\" cellpadding=\"5\">";
       echo "<thead>";
-      echo "<td style=\"font-family:微軟正黑體;text-transform:initial;font-size:120%\" WIDTH=\"80px\">訂單編號</td>";
-      echo "<td style=\"font-family:微軟正黑體;text-transform:initial;font-size:120%\" WIDTH=\"50px\">訂購方式</td>";
-      echo "<td style=\"font-family:微軟正黑體;text-transform:initial;font-size:120%\" WIDTH=\"60px\">訂購人</td>";
-      echo "<td style=\"font-family:微軟正黑體;text-transform:initial;font-size:120%\" WIDTH=\"75px\">訂購人電話</td>";
-      echo "<td style=\"font-family:微軟正黑體;text-transform:initial;font-size:120%\" WIDTH=\"60px\">收件人</td>";
-      echo "<td style=\"font-family:微軟正黑體;text-transform:initial;font-size:120%\" WIDTH=\"75px\">收件人電話</td>";
-      echo "<td style=\"font-family:微軟正黑體;text-transform:initial;font-size:120%\" WIDTH=\"210px\">寄送地址</td>";
-      echo "<td style=\"font-family:微軟正黑體;text-transform:initial;font-size:120%\" WIDTH=\"130px\">產品編號</td>";
-      echo "<td style=\"font-family:微軟正黑體;text-transform:initial;font-size:120%\" WIDTH=\"60px\">總數量</td>";
-      echo "<td style=\"font-family:微軟正黑體;text-transform:initial;font-size:120%\" WIDTH=\"60px\">商品總價小計</td>";
-      echo "<td style=\"font-family:微軟正黑體;text-transform:initial;font-size:120%\" WIDTH=\"300px\">備註</td>";
-      echo "<td style=\"font-family:微軟正黑體;text-transform:initial;font-size:120%\" WIDTH=\"60px\">銷貨單</td>";
+      echo "<td WIDTH=\"80px\">訂單編號</td>";
+      echo "<td WIDTH=\"50px\">訂購方式</td>";
+      echo "<td WIDTH=\"60px\">訂購人</td>";
+      echo "<td WIDTH=\"75px\">訂購人電話</td>";
+      echo "<td WIDTH=\"60px\">收件人</td>";
+      echo "<td WIDTH=\"75px\">收件人電話</td>";
+      echo "<td WIDTH=\"210px\">寄送地址</td>";
+      echo "<td WIDTH=\"130px\">產品編號</td>";
+      echo "<td WIDTH=\"60px\">總數量</td>";
+      echo "<td WIDTH=\"60px\">商品總價小計</td>";
+      echo "<td WIDTH=\"300px\">備註</td>";
+      echo "<td WIDTH=\"60px\">銷貨單</td>";
       echo "</thead>";
 
 

@@ -37,8 +37,8 @@ tr:nth-child(even) {
 --->
 <body>
 <div id="logo" class="container">
-  <a style="font-family:微軟正黑體;text-transform:initial;font-size:120%" href="../index.html" class="button">Home</a>
-  <a style="font-family:微軟正黑體;text-transform:initial;font-size:120%" href="input_delete_order_id.php" class="button">刪除其他訂單</a>
+  <a href="../index.html" class="button">Home</a>
+  <a href="input_delete_order_id.php" class="button">刪除其他訂單</a>
   <h1><span></span></h1>
 </div>
 
@@ -172,7 +172,7 @@ $result = $mysqli->query("CREATE TABLE `the_db`.`gernal_table` ( `訂單編號` 
 
 </body>
 </html>
-        <a href=<?php echo "\"get_gernal_table.php\"" ?> class="button" style="font-family:微軟正黑體;text-transform:initial;font-size:120%" > 總表檢視 </a>
+        <a href=<?php echo "\"get_gernal_table.php\"" ?> class="button"> 總表檢視 </a>
     <p><?php #echo "$order_id test $discount $discount_value " ?></p></br>
 </div>
 

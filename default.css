@@ -14,28 +14,49 @@
 		color: #969696;
 	}
 	
+	h1
+	{
+		font-size: 300%;
+	}
+	
+	h2, h3
+	{
+		font-size: 200%;
+	}
+	
 	
 	h1, h2, h3
 	{
 		margin: 0;
 		padding: 0;
 		font-weight: 900;
+		font-family: '微軟正黑體;text-transform:initial';
 	}
 	
 	p, ol, ul
 	{
 		margin-top: 0;
+		font-size: 100%;
+		font-family: '微軟正黑體;text-transform:initial';
 	}
 	
 	ol, ul
 	{
 		padding: 0;
 		list-style: none;
+		font-size: 100%;
+		font-family: '微軟正黑體;text-transform:initial';
 	}
 	
 	p
 	{
 		line-height: 180%;
+	}
+	
+	option
+	{
+		font-size: 120%;
+		font-family: '微軟正黑體;text-transform:initial';
 	}
 	
 	strong
@@ -45,6 +66,8 @@
 	a
 	{
 		color: #0000FF;
+		font-size: 100%;
+		font-family: '微軟正黑體;text-transform:initial';
 	}
 	
 	a:hover
@@ -68,16 +91,19 @@
 /*********************************************************************************/
 
 	table {
-		font-family: 微軟正黑體, sans-serif;
 		border-collapse: collapse;
 		width: 100%;
 		color: #000000;
+		font-size: 100%;
+		font-family: '微軟正黑體;text-transform:initial';
 	  }
 	  
 	  td, th {
 		border: 1px solid #dddddd ;
 		text-align: left;
 		padding: 2px;
+		font-size: 100%;
+		font-family: '微軟正黑體;text-transform:initial';
 	  }
 	  tr:nth-child(even) {
 		background-color: #dddddd;
@@ -456,6 +482,7 @@
 	#content
 	{
 	}
+	
 
 /*********************************************************************************/
 /* Sidebar                                                                       */
@@ -487,6 +514,7 @@
 		text-shadow: 1px 1px 1px #FFF;
 		color: #6A6A6A;
 	}
+	
 	
 	#copyright a
 	{
@@ -634,11 +662,22 @@
 	{
 		margin: 1em 0em;
 		text-transform: uppercase;
-		font-size: 1.5em;
+		font-size: 200%;
 		font-weight: 700;
+		font-family: '微軟正黑體;text-transform:initial';
 		color: #454445;
 	}
 	
+	#three-column p
+	{
+		margin: 1em 0em;
+		text-transform: uppercase;
+		font-size: 100%;
+		font-weight: 700;
+		font-family: '微軟正黑體;text-transform:initial';
+		color: #454445;
+	}
+
 	#three-column .icon
 	{
 		position: relative;
@@ -673,11 +712,12 @@
 	
 	#three-column .title h2
 	{
-		font-size: 1.60em;
+		font-size: 200%;
 		font-weight: 900;
-		font-family: 'Open Sans', sans-serif;
+		font-family: '微軟正黑體;text-transform:initial';
 		color: #00A4D9;
 	}
+	/* style="font-family:微軟正黑體;text-transform:initial;font-size:300%" */
 	
 	#three-column .title .byline
 	{
@@ -691,10 +731,11 @@
 		border-top-color: #292929;
 	}
 
-
-
-
-
-
+	#three-column .webContent
+	{
+		width: 80%;
+		margin-right: 0;
+		margin-bottom: 20px;
+	}
 
 
