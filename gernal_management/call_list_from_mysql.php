@@ -23,13 +23,13 @@ td, th {
 tr:nth-child(even) {
   background-color: #dddddd;
 }
-  body {
+  /* body {
   background-image: url('../images/APG-3.PNG');
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: top left ;
   background-size: 15%;
-  }
+  } */
 </style>
 
 
@@ -113,6 +113,6 @@ tr:nth-child(even) {
 </body>
 <div class='container' align=center><br>
 <em >Copyright 2020 <a href='../'>HOME</a>. Allrights reserved.</em></br>
-<img src="../images/APG-3.PNG" width=300>
+<!-- <img src="../images/APG-3.PNG" width=300> -->
 </div>
 </html>

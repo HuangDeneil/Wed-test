@@ -52,13 +52,14 @@ tr:nth-child(even) {
     margin:5px 0;
     padding:1%;
 }
-body {
+
+/* body {
   background-image: url('../images/APG-3.PNG');
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: top left ;
   background-size: 15%;
-  }
+  } */
 </style>
 
 </head>
@@ -77,7 +78,7 @@ body {
 <body>
 <div id="logo" class="container">
   <a href="../index.html" class="button" style="font-family:微軟正黑體;text-transform:initial;font-size:120%">Back</a>
-  <?php  for($i=0;$i<45;$i++) {echo "&ensp;"; } ?> <img src="../images/APG-3.PNG" width=300>
+  <!-- <?php  for($i=0;$i<45;$i++) {echo "&ensp;"; } ?> <img src="../images/APG-3.PNG" width=300> -->
   <h1 style="font-family:微軟正黑體;text-transform:initial;font-size:300%">物種資料庫<span>Loacl web system</span>
   <h1 style="font-family:微軟正黑體;text-transform:initial;font-size:200%" >新增資料</h1></h1>
 </div>
@@ -324,7 +325,7 @@ body {
 </body>
 <div class='container' align=center><br>
 <em >Copyright 2020 <a href='../'>HOME</a>. Allrights reserved.</em></br>
-<img src="../images/APG-3.PNG" width=300>
+<!--<img src="../images/APG-3.PNG" width=300> -->
 </div>
 </html>
 

@@ -23,13 +23,13 @@ td, th {
 tr:nth-child(even) {
   background-color: #dddddd;
 }
-body {
+/* body {
   background-image: url('../images/APG-3.PNG');
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: top left ;
   background-size: 15%;
-  }
+  } */
 </style>
 </head>
 <body>
@@ -181,12 +181,12 @@ reference1  reference2  reference3  reference4  reference5
     var Description = document.getElementById("Description").value;
     var reference1 = document.getElementById("reference1").value;
 
-    if( name === "" ){alert("請填寫訂單來源(網路or現場)");}
-    else if( genus === "" ){alert("請填寫訂貨人姓名");}
-    else if( type === "" ){alert("請填寫訂貨人電話");}
-    else if( key_word === "" ){alert("請填寫收貨人姓名");}
-    else if( Description === "" ){alert("請填寫收貨人電話");}
-    else if( reference1 === "" ){alert("請填寫到貨地址");}
+    if( name === "" ){alert("請填寫物種名");}
+    else if( genus === "" ){alert("請填寫物種屬名");}
+    else if( type === "" ){alert("請填寫物種型態");}
+    else if( key_word === "" ){alert("請填寫物種關鍵字");}
+    else if( Description === "" ){alert("請填寫物種敘述");}
+    else if( reference1 === "" ){alert("請填寫文獻");}
     
 </script>
 </br></br>
@@ -199,6 +199,6 @@ reference1  reference2  reference3  reference4  reference5
 </body>
 <div class='container' align=center><br>
 <em >Copyright 2020 <a href='../'>HOME</a>. Allrights reserved.</em></br>
-<img src="../images/APG-3.PNG" width=300>
+<!-- <img src="../images/APG-3.PNG" width=300> -->
 </div>
 </html>

@@ -59,13 +59,13 @@ tr:nth-child(even) {
 ######################################################################
 --->
 <style>
-  body {
+  /* body {
   background-image: url('../images/APG-3.PNG');
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center top;
   background-size: 30%;
-  }
+  } */
 </style>
 
 <body>
@@ -373,7 +373,7 @@ _ matches exactly one character.
 
 <div class='container' align=center><br>
 <em >Copyright 2020 <a href='../'>HOME</a>. Allrights reserved.</em></br>
-<img src="../images/APG-3.PNG" width=300>
+<!-- <img src="../images/APG-3.PNG" width=300> -->
 </div>
 
 </html>
