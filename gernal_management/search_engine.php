@@ -58,8 +58,19 @@ tr:nth-child(even) {
 ###################*####*####*****######***##*###****#################
 ######################################################################
 --->
+<style>
+  body {
+  background-image: url('../images/APG-3.PNG');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 30%;
+  }
+</style>
+
 <body>
 <div id="logo" class="container">
+  
   <a href="../index.html" class="button" style="font-family:微軟正黑體;text-transform:initial;font-size:150%">Home</a>
   <h1 style="font-family:微軟正黑體;text-transform:initial;font-size:300%">物種資料庫查詢系統</br></h1>
 </div>
@@ -359,6 +370,12 @@ _ matches exactly one character.
       ?>
 </div>
 </body>
+
+<div class='container' align=center><br>
+<em >Copyright 2020 <a href='../'>HOME</a>. Allrights reserved.</em></br>
+<img src="../images/APG-3.PNG" width=300>
+</div>
+
 </html>
 
 

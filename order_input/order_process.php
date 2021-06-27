@@ -52,7 +52,14 @@ tr:nth-child(even) {
     margin:5px 0;
     padding:1%;
 }
-</style  style="width:100%">
+body {
+  background-image: url('../images/APG-3.PNG');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: top left ;
+  background-size: 15%;
+  }
+</style>
 
 </head>
 
@@ -70,6 +77,7 @@ tr:nth-child(even) {
 <body>
 <div id="logo" class="container">
   <a href="../index.html" class="button" style="font-family:微軟正黑體;text-transform:initial;font-size:120%">Back</a>
+  <?php  for($i=0;$i<45;$i++) {echo "&ensp;"; } ?> <img src="../images/APG-3.PNG" width=300>
   <h1 style="font-family:微軟正黑體;text-transform:initial;font-size:300%">物種資料庫<span>Loacl web system</span>
   <h1 style="font-family:微軟正黑體;text-transform:initial;font-size:200%" >新增資料</h1></h1>
 </div>
@@ -141,9 +149,11 @@ tr:nth-child(even) {
           </br>
           <h3>Aerobic/anaerobic:</h3>
           <input type="checkbox" id="Strictly aerobic" name="Strictly aerobic" value="Strictly aerobic">
-          <label for="Strictly aerobic">Strictly aerobic</label>
+          <label for="Strictly aerobic">Strictly aerobic</label>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
           <input type="checkbox" id="Aerobic" name="Aerobic" value="Aerobic">
-          <label for="Aerobic">Aerobic</label>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;</br>
+          <label for="Aerobic">Aerobic</label>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+          <input type="checkbox" id="Obligate_aerobe" name="Obligate_aerobe" value="Obligate_aerobe">
+          <label for="Obligate_aerobe">Obligate_aerobe</label></br>
           <input type="checkbox" id="Facultative anaerobic" name="Facultative anaerobic" value="Facultative anaerobic">
           <label for="Facultative anaerobic">Facultative anaerobic</label>&ensp;&ensp;&ensp;&ensp;
           <input type="checkbox" id="Microaerophiles" name="Microaerophiles" value="Microaerophiles">
@@ -151,7 +161,7 @@ tr:nth-child(even) {
           <input type="checkbox" id="Aerotolerant" name="Aerotolerant" value="Aerotolerant">
           <label for="Aerotolerant">Aerotolerant</label>&ensp;&ensp;&ensp;&ensp;
           <input type="checkbox" id="Anaerobic" name="Anaerobic" value="Anaerobic">
-          <label for="Anaerobic">Anaerobic</label>&ensp;&ensp;
+          <label for="Anaerobic">Anaerobic</label>
           </br></br>
            
           
@@ -163,23 +173,28 @@ tr:nth-child(even) {
           <input type="checkbox" id="plant pathogen" name="plant pathogen" value="plant pathogen">
           <label for="plant pathogen">plant pathogen</label>&ensp;
           <input type="checkbox" id="unkown pathogenic" name="unkown pathogenic" value="unkown pathogenic">
-          <label for="unkown pathogenic">unkown pathogenic</label>&ensp;<br><br>
+          <label for="unkown pathogenic">unkown pathogenic</label>&ensp;
+          <br><br>
 
           <h3>Flora/environmental:</h3>
           <input type="checkbox" id="normal flora" name="normal flora" value="normal flora">
           <label for="normal flora">normal flora</label>
           <input type="checkbox" id="environmental" name="environmental" value="environmental">
-          <label for="environmental">environmental</label><br><br>
+          <label for="environmental">environmental</label>
+          <br><br>
           
           <h3>Position:</h3>
           <input type="checkbox" id="oral" name="oral" value="oral">
-          <label for="oral">oral</label>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+          <label for="oral">oral</label>&ensp;&ensp;&ensp;
           <input type="checkbox" id="gut" name="gut" value="gut">
-          <label for="gut">gut</label>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+          <label for="gut">gut</label>&ensp;&ensp;&ensp;
           <input type="checkbox" id="skin" name="skin" value="skin">
-          <label for="skin">skin</label>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+          <label for="skin">skin</label>&ensp;&ensp;&ensp;&ensp;
           <input type="checkbox" id="vaginal" name="vaginal" value="vaginal">
-          <label for="vaginal">vaginal</label>&ensp;<br><br>
+          <label for="vaginal">vaginal</label>&ensp;&ensp;&ensp;
+          <input type="checkbox" id="respiratory" name="respiratory" value="respiratory">
+          <label for="respiratory">respiratory</label>&ensp;
+          <br><br>
 
           <h3>Extrime type:</h3>
           <input type="checkbox" id="extrime" name="extrime" value="extrime">
@@ -187,7 +202,8 @@ tr:nth-child(even) {
           <input type="checkbox" id="acidophilic" name="acidophilic" value="acidophilic">
           <label for="acidophilic">acidophilic</label>&ensp;&ensp;&ensp;&ensp;
           <input type="checkbox" id="thermophilic" name="thermophilic" value="thermophilic">
-          <label for="thermophilic">thermophilic</label>&ensp;&ensp;&ensp;</br></br>
+          <label for="thermophilic">thermophilic</label>&ensp;&ensp;&ensp;
+          </br></br>
           
           <input type="checkbox" id="unkown" name="unkown" value="unkown">
           <label for="unkown">unkown</label><br>
@@ -306,6 +322,10 @@ tr:nth-child(even) {
 </p></br>
 </div>
 </body>
+<div class='container' align=center><br>
+<em >Copyright 2020 <a href='../'>HOME</a>. Allrights reserved.</em></br>
+<img src="../images/APG-3.PNG" width=300>
+</div>
 </html>
 
 

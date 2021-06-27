@@ -23,7 +23,16 @@ td, th {
 tr:nth-child(even) {
   background-color: #dddddd;
 }
-</style  style="width:100%">
+  body {
+  background-image: url('../images/APG-3.PNG');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: top left ;
+  background-size: 15%;
+  }
+</style>
+
+
 </head>
 
 <!--- 
@@ -38,7 +47,8 @@ tr:nth-child(even) {
 <body>
 <div id="logo" class="container">
   <a href="../index.html" class="button" style="font-family:微軟正黑體;text-transform:initial;font-size:200%">Back</a>
-  <h1 style="font-family:微軟正黑體;text-transform:initial;font-size:300%">物種資料庫<span>Loacl web system</span><h1>List all libraries</h1></br></h1>
+   <h1 style="font-family:微軟正黑體;text-transform:initial;font-size:300%">物種資料庫<span>Loacl web system</span><h1>List all libraries</h1></h1>
+  </br>
 </div>
 
 <!--- Table region  --->
@@ -101,4 +111,8 @@ tr:nth-child(even) {
       ?>
 </div>
 </body>
+<div class='container' align=center><br>
+<em >Copyright 2020 <a href='../'>HOME</a>. Allrights reserved.</em></br>
+<img src="../images/APG-3.PNG" width=300>
+</div>
 </html>
