@@ -5,31 +5,6 @@
 <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800|Open+Sans+Condensed:300,700" rel="stylesheet" />
 <link href="../default.css" rel="stylesheet" type="text/css" media="all" />
 <link href="../fonts.css" rel="stylesheet" type="text/css" media="all" />
-<style>
-table {
-  font-family: 微軟正黑體, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-  color: #000000;
-}
-
-td, th {
-  border: 1px solid ##dddddd ;
-  text-align: left;
-  padding: 2px;
-}
-
-tr:nth-child(even) {
-  background-color: #dddddd;
-}
-/* body {
-  background-image: url('../images/APG-3.PNG');
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: top left ;
-  background-size: 15%;
-  } */
-</style>
 </head>
 
 
@@ -44,8 +19,8 @@ tr:nth-child(even) {
 --->
 <body>
 <div id="logo" class="container">
-  <a style="font-family:微軟正黑體;text-transform:initial;font-size:120%" href="order_process.php" class="button">下個訂單next order</a>
-  <a style="font-family:微軟正黑體;text-transform:initial;font-size:120%" href="../index.html" class="button">回首頁 Homepage</a>
+  <a style="font-size:120%" href="order_process.php" class="button">新增物種</a>
+  <a style="font-size:120%" href="../index.html" class="button">回首頁 Homepage</a>
   <h1><span></span></h1>
 </div>
 
@@ -81,27 +56,6 @@ tr:nth-child(even) {
     {
         printf("Error loading character set utf8: %s\n", $mysqli->error);
     } 
-    
-
-    /*
-    order_id : D20191023013743
-    order_from : 現場
-    date : 20191023
-
-    source_name : 謝佳琳
-    source_phone : 0975306192
-    source_email : hudeneil@gmail.com
-
-    arrive_name : 邱慧滿
-    arrive_phone : 0921472322
-    arrive_email : hudeneil@gmail.com
-
-    address : 新北市新店區黎明路98號11樓(管理員代收）
-    note :
-    total_price : 7430
-    discount : 7130
-    orders : 208894x1 209902x2 202503x3 208802x4
-    */
     $order_id=_get("order_id");
     $order_from=_get("order_from");
     $date=_get("date");
@@ -370,9 +324,7 @@ GROUP BY A.S_ID, A.S_NAME
 
 </body>
 </html>
-    <a href=<?php echo "\"../order_list/$order_id-format1.html\"" ?> class="button" style="font-family:微軟正黑體;text-transform:initial;font-size:120%" > 銷貨單 格式一</a>
-    <a href=<?php echo "\"../order_list/$order_id-format2.html\"" ?> class="button" style="font-family:微軟正黑體;text-transform:initial;font-size:120%" > 銷貨單 格式二</a>
-    <a href=<?php echo "\"../gernal_management/get_gernal_table.php\"" ?> class="button" style="font-family:微軟正黑體;text-transform:initial;font-size:120%" > 總表檢視 </a>
+    <a href=<?php echo "\"../gernal_management/get_gernal_table.php\"" ?> class="button" > 總表檢視 </a>
     <p><?php #echo "$order_id test $discount $discount_value " ?></p></br>
 </div>
 </body>

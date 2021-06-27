@@ -33,11 +33,13 @@
 		font-family: '微軟正黑體;text-transform:initial';
 	}
 	
-	p, ol, ul
+	p, ol, ul, li
 	{
 		margin-top: 0;
 		font-size: 100%;
 		font-family: '微軟正黑體;text-transform:initial';
+		text-align: left;
+		padding: 0px 100px 1px 10%
 	}
 	
 	ol, ul
@@ -227,7 +229,7 @@
 		height: 40px;
 		line-height: 40px;
 		border-radius: 20px;
-		text-align: center;
+		text-align: left;
 		color: #FFFFFF;
 	}
 	
@@ -654,7 +656,7 @@
 	#three-column
 	{
 		overflow: hidden;
-		text-align: center;
+		text-align: left;
 		color: #525252;
 	}
 	
@@ -721,6 +723,7 @@
 	
 	#three-column .title .byline
 	{
+		font-family: '微軟正黑體;text-transform:initial';
 		padding-top: 0.50em;
 		font-size: 0.90em;
 		color: #858585;
@@ -733,9 +736,8 @@
 
 	#three-column .webContent
 	{
-		width: 80%;
-		margin-right: 0;
-		margin-bottom: 20px;
+		width: 200px;
+		padding: 80px 40px 80px 40px;
 	}
 
 
