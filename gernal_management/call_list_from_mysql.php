@@ -60,7 +60,6 @@
             echo "<td style=\"font-size:150%\">Organism Name</td>";
             echo "<td style=\"font-size:150%\">Genus</td>";
             echo "<td style=\"font-size:150%\">Type</td>";
-            echo "<td style=\"font-size:150%\">Source</td>";
             echo "<td style=\"font-size:150%\">Key words</td>";
             echo "</thead>";
 
@@ -70,7 +69,6 @@
                 echo "<td style=\"font-size:100%\"><I>" . $row["organism_name"]. "</I></td>";
                 echo "<td style=\"font-size:100%\"><I>" . $row["genus"]. "</I></td>";
                 echo "<td style=\"font-size:100%\"> " . $row["type"]. "</td>";
-                echo "<td style=\"font-size:100%\"> " . $row["source"]. "</td>";
                 echo "<td style=\"font-size:100%\"> " . $row["key_word"]. "</td>";
                 echo "</tr>";
 

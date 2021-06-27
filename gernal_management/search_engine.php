@@ -132,9 +132,9 @@ $category=_get("category");
 $input=_get("input");
 
 /*
-#########################################################################################################
+################################################################################
 #################### 讀取 產品資訊 from 暫存資料夾中的 ""  ######################
-#########################################################################################################
+################################################################################
 */
      
 $servername = "localhost";
@@ -183,18 +183,22 @@ $mysqli = new mysqli("$servername", "$username", "$password", "$dbname");
 _ matches exactly one character.
         */
 
-        if ( empty($input) ){print "$input</br></br><h1>No input</h1></br>";}
+        if ( empty($input) )
+        {
+          print "$input</br></br><h2>&ensp;&ensp;&ensp;No input detect</h2>
+          &ensp; Try input something (e.q. Acinetobacter baumannii )
+          </p></br>";
+        }
         else
         {
            print " 
-           <table>
-           <tr>
-             <td><h1>Input category : $category &ensp;&ensp;Input info : $input</h1></td>
-            <tr>
-           </table>";
-           
-           print '<svg height="7" width="1200"><line x1="0" y1="0" x2="1300" y2="0" style="stroke:rgb(255,100,100);stroke-width:50" /></svg>';
-           print "</br></br></br>";
+<table>
+  <tr>
+    <td><h2>Input category : $category &ensp;&ensp;Input info : $input</h2></td>
+  <tr>
+</table>";
+print '<svg height="7" width="1200"><line x1="0" y1="0" x2="1300" y2="0" style="stroke:rgb(0,150,255);stroke-width:50" /></svg>';
+print "</br></br></br>";
 
             $result = $mysqli -> query("SELECT * FROM reference_summary WHERE `$category` LIKE '%$input%' ORDER BY `$category` ASC");
             
@@ -206,47 +210,38 @@ _ matches exactly one character.
                 $tmp_count=1;
                 while($row = $result->fetch_assoc()) 
                 {
-                    print "<table>";
-                    print "<tr>";
-                    print "</tr>";
-                    print "<tr>";
-                    print "<td>ID: ".$row["ID"]."</td>";
-                    print "<td>organism_name: <i>".$row["organism_name"]."</i></td>";
-                    print "<td>chinese_name: ".$row["chinese_name"]."</td>";
-                    print "</tr>";
-                    print "<tr>";
-                    print "<td>genus: <i>".$row["genus"]."</i></td>";
-                    print "<td>type: ".$row["type"]."</td>";
-                    print "<td></td>";
-                    print "</tr>";
-                    print "</table>";
-                    print '<svg height="7" width="1200"><line x1="0" y1="0" x2="1300" y2="0" style="stroke:rgb(0,150,255);stroke-width:2" /></svg>';
-
-                    print "<table>";
-                    print "<tr>";
-                    print "</tr>";
-                    print "<tr>";
-                    print "<td>source: ".$row["source"]."</td>";
-                    print "<td>Halos_id: ".$row["Halos_id"]."</td>";
-                    print "<td>taxid: ".$row["taxid"]."</td>";
-                    print "</tr>";
-                    print "</table>";
-                    
-                    print "<table>";
-                    print "<td>key_word: </td><td>".$row["key_word"]."</td>";
-                    print "<tr><td>Description: </td><td>".$row["Description"]."</td></tr>";
-                    print "<tr><td>reference: </td><td>".$row["reference1"]."</td></tr>";
-                    print "<tr><td>reference: </td><td>".$row["reference2"]."</td></tr>";
-                    print "<tr><td>reference: </td><td>".$row["reference3"]."</td></tr>";
-                    print "<tr><td>reference: </td><td>".$row["reference4"]."</td></tr>";
-                    print "<tr><td>reference: </td><td>".$row["reference5"]."</td></tr>";
-                    print "</table>";
-                    print '<svg height="7" width="1200"><line x1="0" y1="0" x2="1300" y2="0" style="stroke:rgb(255,150,150);stroke-width:20" /></svg>';
+print "
+<table>
+  <tr></tr>
+  <tr>
+      <td>ID: ".$row["ID"]."</td>
+      <td>organism_name: <i>".$row["organism_name"]."</i></td>
+      <td>chinese_name: ".$row["chinese_name"]."</td>
+  </tr>
+  <tr>
+      <td>genus: <i>".$row["genus"]."</i></td>
+      <td>type: ".$row["type"]."</td>
+      <td></td>
+      </tr>
+</table>";
+print '<svg height="7" width="1200"><line x1="0" y1="0" x2="1300" y2="0" style="stroke:rgb(0,150,255);stroke-width:2" /></svg>';
+print "
+<br>
+<table>
+  <td>key_word: </td><td>".$row["key_word"]."</td>
+  <tr><td>Description: </td><td>".$row["Description"]."</td></tr>
+  <tr><td>reference: </td><td>".$row["reference1"]."</td></tr>
+  <tr><td>reference: </td><td>".$row["reference2"]."</td></tr>
+  <tr><td>reference: </td><td>".$row["reference3"]."</td></tr>
+  <tr><td>reference: </td><td>".$row["reference4"]."</td></tr>
+  <tr><td>reference: </td><td>".$row["reference5"]."</td></tr>
+</table>";
+print '<svg height="7" width="1200"><line x1="0" y1="0" x2="1300" y2="0" style="stroke:rgb(0,150,255);stroke-width:20" /></svg>';
                     
                     
                     ++$tmp_count;
                     #print_r($row);
-                    print "</br></br></br></br></br>";
+print "</br></br></br></br></br>";
                 }
             } else 
             {

@@ -38,7 +38,7 @@
 		margin-top: 0;
 		font-size: 100%;
 		font-family: '微軟正黑體;text-transform:initial';
-		text-align: left;
+		text-align: center;
 		padding: 0px 100px 1px 10%
 	}
 	
@@ -229,7 +229,7 @@
 		height: 40px;
 		line-height: 40px;
 		border-radius: 20px;
-		text-align: left;
+		text-align: center;
 		color: #FFFFFF;
 	}
 	
@@ -387,6 +387,9 @@
 	#menu li
 	{
 		display: inline-block;
+		padding: 0px 25px 0px 25px;
+		font-size: 100%;
+		font-family: '微軟正黑體;text-transform:initial';
 	}
 	
 	#menu a
@@ -400,12 +403,16 @@
 		font-size: 1em;
 		font-weight: 700;
 		color: #838383;
+		font-size: 100%;
+		font-family: '微軟正黑體;text-transform:initial';
 	}
 	
 	#menu .current_page_item a
 	{
 		background: #01A9DC;
 		color: #FFF;
+		font-size: 100%;
+		font-family: '微軟正黑體;text-transform:initial';
 	}
 	
 	#menu a:hover
@@ -656,7 +663,7 @@
 	#three-column
 	{
 		overflow: hidden;
-		text-align: left;
+		text-align: center;
 		color: #525252;
 	}
 	
@@ -674,6 +681,7 @@
 	{
 		margin: 1em 0em;
 		text-transform: uppercase;
+		text-align: center;
 		font-size: 100%;
 		font-weight: 700;
 		font-family: '微軟正黑體;text-transform:initial';
