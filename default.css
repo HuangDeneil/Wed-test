@@ -8,7 +8,6 @@
 		margin: 0px;
 		padding: 0px;
 		background: #E9E9E9 url(images/bg01.png) repeat;
-		font-family: 'Open Sans', sans-serif;
 		font-size: 11pt;
 		font-weight: 400;
 		color: #969696;
@@ -16,13 +15,11 @@
 	
 	h1
 	{
-		font-family : Arial;
 		font-size: 300%;
 	}
 	
 	h2, h3
 	{
-		font-family : Arial;
 		font-size: 200%;
 	}
 	
@@ -32,15 +29,12 @@
 		margin: 0;
 		padding: 0;
 		font-weight: 900;
-		font-family: Microsoft JhengHei;
 	}
 	
 	p, ol, ul, li
 	{
 		margin-top: 0;
 		font-size: 100%;
-		font-family : Arial,Microsoft JhengHei;
-		/* font-family: 'Arial,微軟正黑體;text-transform:initial'; */
 		text-align: center;
 		padding: 0px 100px 1px 10%
 	}
@@ -50,7 +44,6 @@
 		padding: 0;
 		list-style: none;
 		font-size: 100%;
-		font-family: Microsoft JhengHei,Arial;
 	}
 	
 	p
@@ -61,7 +54,6 @@
 	option
 	{
 		font-size: 120%;
-		font-family: Microsoft JhengHei;
 	}
 	
 	strong
@@ -72,7 +64,6 @@
 	{
 		color: #0000FF;
 		font-size: 100%;
-		font-family: Microsoft JhengHei;
 	}
 	
 	a:hover
@@ -100,7 +91,6 @@
 		width: 100%;
 		color: #000000;
 		font-size: 100%;
-		font-family: Microsoft JhengHei;
 	  }
 	  
 	  td, th {
@@ -108,7 +98,6 @@
 		text-align: left;
 		padding: 2px;
 		font-size: 100%;
-		font-family: Microsoft JhengHei;
 	  }
 	  tr:nth-child(even) {
 		background-color: #dddddd;
@@ -392,7 +381,6 @@
 		display: inline-block;
 		padding: 0px 25px 0px 25px;
 		font-size: 100%;
-		font-family: Microsoft JhengHei;
 	}
 	
 	#menu a
@@ -407,7 +395,6 @@
 		font-weight: 700;
 		color: #838383;
 		font-size: 100%;
-		font-family: Microsoft JhengHei;
 	}
 	
 	#menu .current_page_item a
@@ -415,7 +402,6 @@
 		background: #01A9DC;
 		color: #FFF;
 		font-size: 100%;
-		font-family: Microsoft JhengHei;
 	}
 	
 	#menu a:hover
@@ -676,7 +662,6 @@
 		text-transform: uppercase;
 		font-size: 200%;
 		font-weight: 700;
-		font-family: Microsoft JhengHei;
 		color: #454445;
 	}
 	
@@ -687,7 +672,6 @@
 		text-align: center;
 		font-size: 100%;
 		font-weight: 700;
-		font-family: Microsoft JhengHei;
 		color: #454445;
 	}
 
@@ -727,14 +711,12 @@
 	{
 		font-size: 200%;
 		font-weight: 900;
-		font-family: Microsoft JhengHei;
 		color: #00A4D9;
 	}
 	/* style="font-family:微軟正黑體;text-transform:initial;font-size:300%" */
 	
 	#three-column .title .byline
 	{
-		font-family: Microsoft JhengHei;
 		padding-top: 0.50em;
 		font-size: 0.90em;
 		color: #858585;
