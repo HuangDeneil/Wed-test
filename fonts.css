@@ -8,6 +8,8 @@
 	     url('fonts/fontawesome-webfont.woff?v=3.0.1') format('woff'),
 	     url('fonts/fontawesome-webfont.ttf?v=3.0.1') format('truetype'),
 	     url('fonts/fontawesome-webfont.svg#FontAwesome') format('svg');
+	src: local("Heiti TC"), local("微軟正黑體"), local("Microsoft JhengHei");
+    unicode-range: U+4E00-9FFF; 
 	font-weight: normal;
 	font-style: normal;
 }
@@ -20,9 +22,15 @@
 	     url('fonts/fontawesome-social-webfont.woff') format('woff'),
 		 url('fonts/fontawesome-social-webfont.ttf') format('truetype'),
 		 url('fonts/fontawesome-social-webfont.svg#Font-Awesome-More') format('svg');
+    src: local(Arial);
+    unicode-range: U+00-024F;
 	font-weight: normal;
 	font-style: normal;
 }
+
+
+
+
 
 /*********************************************************************************/
 /* Icons                                                                         */
